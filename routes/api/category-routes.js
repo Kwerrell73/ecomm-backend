@@ -29,7 +29,17 @@ router.get('/:id', (req, res) => {
       model: Product,
       attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
     }]
+  }).then(dbCategoryData => {
+    if (!dbCategoryData) {
+      res.status(404).json({ message: 'No category found with the selected id'}); 
+      return; 
+    }
+    res.json(dbCategoryData);
   })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
 });
 
 
