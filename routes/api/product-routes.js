@@ -3,6 +3,8 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // The `/api/products` endpoint
 
+// Routes
+
 // get all products
 router.get('/', (req, res) => {
   Product.findAll(
@@ -121,6 +123,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
+//delete product
 router.delete('/:id', (req, res) => {
   Product.destroy({
     where: {
