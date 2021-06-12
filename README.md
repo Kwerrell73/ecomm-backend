@@ -11,7 +11,7 @@ A back end for an e-commerce site powered by Express.js API and Sequelize. This 
 * dotenv
 
 ## Link to walk thru video of application
-https://drive.google.com/file/d/1L0vq0_hpx7RjgEl22TsjxO7zOhtvn62t/view
+https://drive.google.com/file/d/1-sClX_XSzxjUN0bqx11MJP5_2B15LFij/view
 
 ## Screenshots of tests
 ![](./assets/images/screenshots/categories.png)
